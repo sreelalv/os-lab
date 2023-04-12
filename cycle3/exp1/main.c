@@ -18,12 +18,26 @@ typedef struct{
 }Gantt ; 
 
 void printProcess(Process process[] , int n){
-	printf("Processes\n") ; 
-	for ( int i= 0 ; i< n ; i++ ){
-		printf("Burst %d : %d \n",i+1, process[i].burst) ; 
-	}
-	printf("\n") ;
+	printf("PROCESS CHART\n\n") ;
+	printf("Process\t") ; 
+	for ( int i = 0 ; i < n ; i++ )
+		printf(" %3d ", process[i].no) ;
+
+	printf("\nBurst\t") ;
+	for ( int i= 0 ; i< n ; i++ )
+		printf(" %3d ", process[i].burst) ; 
+
+	printf("\nWaiting\t") ;
+	for ( int i =0 ; i< n ; i++)
+		printf(" %3d ", process[i].waiting) ;
+
+	printf("\nTAT\t") ; 
+	for ( int i= 0 ; i< n ; i++ ) 
+		printf(" %3d ", process[i].turnaround) ;
+	
+	printf("\n\n") ;
 }
+
 void printGantt(Gantt gantt[] , int n ){
 	printf("Gantt Chart \n") ; 
 	for ( int i= 0  ; i< n 	  ; i++){
@@ -42,22 +56,11 @@ void producesGantt(Process process[], Gantt gantt[], int n){
 		}		
 }
 void findAll(Process process[], Gantt gantt[], int n){
-	// for ( int i = 0 ; i < n ; i++ ){
-	// 	Process  p = process[i] ;
-	// 	for ( int j = 0 ; j < n ; j++ ){
-	// 		if ( gantt[i].no == process[i].no )
-	// 			p = process[i] ; 
-	// 	}
-	// 	process[i].waiting = 
-	// }
-
 	for ( int i = 0 ; i < n ; i++ ){
 		if ( process[i].no == gantt[i].no )
 			process[i].waiting = gantt[i].start ;  
 			process[i].turnaround = process[i].burst + process[i].waiting ;
 	}
-
-
 }
 
 double avgWaiting(Process process[], int n){
@@ -94,9 +97,9 @@ void fcfs(){
 	Gantt gantt[n] ; 
 	producesGantt(process, gantt , n) ; 
 	
-	printProcess(process, n) ;
 	printGantt(gantt,n) ;
 	findAll(process,gantt,n) ; 
+	printProcess(process, n) ;
 
 	printf("Average waiting time = %lf\n" ,avgWaiting(process, n)) ; 
 	printf("Average TurnAround time = %lf\n" ,avgTAT(process, n)) ; 
