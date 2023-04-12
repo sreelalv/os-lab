@@ -1,0 +1,10 @@
+#!/bin/bash
+if [[ $# != 1 ]] ; then 
+	echo "Usage <filename> " 
+elif [[ -f "$1" ]] ; then 
+	echo "Regular file " 
+elif [[ -d "$1" ]] ; then 
+	echo "Directory " 
+fi 
+
+

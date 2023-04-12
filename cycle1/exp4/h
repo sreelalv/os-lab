@@ -1,0 +1,7 @@
+#!/bin/bash
+read -p "Enter the name of the user : " user
+echo "Reversed : $(echo $user | rev)"
+
+a=$(echo "$user"| wc -m ) && ((a--)) 
+echo "Length   : $a"
+

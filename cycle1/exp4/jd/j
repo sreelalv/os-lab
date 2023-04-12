@@ -1,0 +1,10 @@
+#!/bin/bash
+file1="file1"
+file2="file2"
+
+if [[ -f $file1 && ! -f $file2 ]] ;then 
+	cat $file1 > $file2 
+elif [[ -f $file1 && -f $file2 ]] ;then 
+	cat $file2 >> $file1
+fi
+	

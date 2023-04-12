@@ -1,0 +1,9 @@
+#!/bin/bash
+read -p "Enter the no of lines : " n
+for (( i=1 ; i<= n ;i++ ))  ; do 
+	a=""	
+	for (( j=0 ; j<i ; j++ )) ; do
+		a="${a} ${i}"
+	done 
+	echo $a
+done 

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if (( $# != 2 )) ; then 
+	echo "Provide necessary command line arguments " 
+	echo "Usage $0 <val1> <val2> "
+	exit
+fi
+
+echo " No. of command line arguments  = $# " 
+echo " Name of the executable = $0 " 
+	 
+echo
+echo "Operations"  
+
+ 
+echo " Sum = $(( $1 + $2 )) " 
+echo " Sub = $(( $1 - $2 )) " 
+echo " MUl = $(( $1 * $2 )) " 
+echo " Div = $(( $1 / $2)) " 
+echo " Mod = $(( $1 % $2 )) " 

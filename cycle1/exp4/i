@@ -1,0 +1,6 @@
+#!/bin/bash 
+
+file="school.dat"
+if [ -f $file ];then 
+	cat $file | sort -k 3 -r 
+fi

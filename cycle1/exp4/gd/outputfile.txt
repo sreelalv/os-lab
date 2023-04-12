@@ -1,0 +1,15 @@
+A. WrItE A shEll scrIpt prOgrAm tO pErfOrm ArIthmEtIc OpErAtIOns On twO
+nUmbErs.
+b. WrItE A shEll scrIpt prOgrAm dEmOnstrAtE UsE Of cOmmAnd lInE
+pArAmEtErs In shEll scrIpt(scrIpt nAmE, tOtAl pArAmEtErs, EAch pArAmEtEr)
+c. WrItE A shEll scrIpt prOgrAm tO chEck whEthEr twO strIngs sEnt As
+cOmmAnd lInE ArgUmEnts ArE sAmE Or nOt UsIng tEst cOmmAnd.
+d. WrItE A shEll scrIpt prOgrAm tO rEAd A pArtIcUlAr nAmE And chEck whEthEr
+It Is A fIlE Or dIrEctOry.
+E. WrItE A shEll scrIpt mEnU drIvEn prOgrAm tO ImplEmEnt A sImplE
+cAlcUlAtOr.
+f. WrItE A shEll scrIpt prOgrAm tO cOUnt thE nUmbEr Of fIlEs In thE cUrrEnt
+dIrEctOry bEgInnIng wIth thE spEcIfIEd chArActEr.
+g. WrItE A shEll scrIpt prOgrAm tO rEAd thE lInEs frOm OnE fIlE And stOrE thEm
+IntO AnOthEr fIlE AftEr cOnvErtIng All thE vOwEls frOm fIrst fIlE IntO
+UppErcAsE.

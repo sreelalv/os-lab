@@ -1,0 +1,32 @@
+#!/bin/bash
+while [ true ] 
+do
+	read -p "Enter 1st number : " num1
+	read -p "Enter 2nd number : " num2
+
+	echo -e "Enter the operation \n1. Add	2. Sub	3. Mul	4.Div	5. Mod 6. Exit "
+	read -p ">> " choice 
+	case $choice in 
+		1) 
+			echo "Sum =  $((num1 + num2)) " 
+			;;
+		2) 
+			echo "Sub =  $(( num1 - num2 )) " 
+			;;
+		3)
+			echo "Mul =  $(( num1 * num2 )) "
+			;;
+		4)	
+			echo "Div = $(( num1 / num2 )) " 
+			;;
+		5)
+			echo "Mod = $(( num1 % num2 )) " 
+			;;
+		6)
+			break ;;
+		*)
+			echo "Invalid choice " 
+	esac
+	echo 
+done 
+

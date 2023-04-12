@@ -1,0 +1,15 @@
+A. Write A shell script progrAm to perform Arithmetic operAtions on two
+numbers.
+b. Write A shell script progrAm demonstrAte use of commAnd line
+pArAmeters in shell script(script nAme, totAl pArAmeters, eAch pArAmeter)
+c. Write A shell script progrAm to check whether two strings sent As
+commAnd line Arguments Are sAme or not using test commAnd.
+d. Write A shell script progrAm to reAd A pArticulAr nAme And check whether
+it is A file or directory.
+e. Write A shell script menu driven progrAm to implement A simple
+cAlculAtor.
+f. Write A shell script progrAm to count the number of files in the current
+directory beginning with the specified chArActer.
+g. Write A shell script progrAm to reAd the lines from one file And store them
+into Another file After converting All the vowels from first file into
+uppercAse.

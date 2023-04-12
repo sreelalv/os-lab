@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Username	: $(whoami)"
+echo "Shell 		: $SHELL" 
+echo "Home Dir	: $HOME"
+echo "Os-type		: $(uname -o)"
+echo "Path 		: $PATH"
+echo "currnt dir	: $PWD"
+echo "logged usr	: $(who | wc -l)"
+
