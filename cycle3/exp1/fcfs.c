@@ -46,9 +46,10 @@ void producesGantt(Process process[], Gantt gantt[], int n){
 }
 void findAll(Process process[], Gantt gantt[], int n){
 	for ( int i = 0 ; i < n ; i++ ){
-		if ( process[i].no == gantt[i].no )
+		if ( process[i].no == gantt[i].no ){
 			process[i].waiting = gantt[i].start ;  
 			process[i].turnaround = process[i].burst + process[i].waiting ;
+		}
 	}
 }
 
@@ -69,20 +70,7 @@ double avgTAT(Process process[], int n){
 }
 
 	
-void fcfs(){
-	int n ; 
-	printf("Enter the no of process : " ) ; 
-	scanf("%d",&n ) ; 
-	Process	process[n] ; 
-	
-	printf("Please Enter the burst time of the processes \n") ; 
-	for ( int i = 0 ; i < n ; i++ ) {
-		printf("process %d : ",i+1 ) ; 
-		scanf("%d",&process[i].burst) ; 
-		process[i].no = i+1 ;
-	}
-	printf("\n") ; 
-	
+void fcfs(Process process[], int n){
 	Gantt gantt[n] ; 
 	producesGantt(process, gantt , n) ; 
 	
@@ -93,4 +81,15 @@ void fcfs(){
 	printf("Average waiting time = %lf\n" ,avgWaiting(process, n)) ; 
 	printf("Average TurnAround time = %lf\n" ,avgTAT(process, n)) ; 
 
+}
+
+
+void readProcess(Process process[] , int n){
+
+	printf("Please Enter the burst time of the processes \n") ; 
+	for ( int i = 0 ; i < n ; i++ ) {
+		printf("process %d : ",i+1 ) ; 
+		scanf("%d",&process[i].burst) ; 
+		process[i].no = i+1 ;
+	}
 }

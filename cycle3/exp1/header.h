@@ -8,10 +8,10 @@
 
 typedef struct{
 	int no; 
-	int burst ; 
-	int arrival ; 
+	int burst ;    
 	int waiting; 
 	int turnaround ; 
+	int complete ; 
 }Process ;
 
 typedef struct{
@@ -20,13 +20,15 @@ typedef struct{
 	int end ; 
 }Gantt ; 
 
+void readProcess(Process[],int) ; 
 void printProcess(Process process[] , int n) ;
 void printGantt(Gantt gantt[] , int n ) ;
 void producesGantt(Process process[], Gantt gantt[], int n) ;
 void findAll(Process process[], Gantt gantt[], int n) ;
 double avgWaiting(Process process[], int n) ;
 double avgTAT(Process process[], int n) ; 
-void fcfs() ;
+void fcfs(Process process[] , int n ) ;
+
 void sjfs() ; 
 
 

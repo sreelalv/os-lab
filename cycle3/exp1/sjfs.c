@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 #include<unistd.h>
 #include<stdlib.h>
@@ -5,5 +6,4 @@
 
 #include "header.h"
 
-void sjfs(){
-}
+void sjfs(){}
