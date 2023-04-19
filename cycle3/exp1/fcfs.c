@@ -80,6 +80,7 @@ void fcfs(Process process[], int n){
 
 	printf("Average waiting time = %lf\n" ,avgWaiting(process, n)) ; 
 	printf("Average TurnAround time = %lf\n" ,avgTAT(process, n)) ; 
+	printf("Throughput  = %.3f",throughput(process,n) );
 
 }
 

@@ -1,17 +1,11 @@
 #ifndef SCHEDULING_H
 #define SCHEDULING_H
 
-#include<stdio.h>
-#include<unistd.h>
-#include<stdlib.h>
-#include<sys/wait.h>
-
 typedef struct{
 	int no; 
 	int burst ;    
 	int waiting; 
 	int turnaround ; 
-	int complete ; 
 }Process ;
 
 typedef struct{
@@ -30,6 +24,8 @@ double avgTAT(Process process[], int n) ;
 void fcfs(Process process[] , int n ) ;
 
 void sjfs() ; 
+double throughput(Process process[] , int n );
+void sort_sjfs(Process process[] ,int n );
 
 
 #endif //SCHEDULING_H

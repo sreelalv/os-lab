@@ -1,4 +1,4 @@
-CC=g++ 
+CC=gcc 
 CCFLAGS=-Wall
 
 output: fcfs.o sjfs.o main.o
